@@ -22,6 +22,7 @@ public class ExcessiveAuth {
         public static void menu() throws IOException{
             
             String validation = "aQ5t&y!"; // passwords should never be hardcoded (used for simple demonstrative purposes only)
+					   // store passwords elsewhere with a hash and salt algorithm
             
             InputStreamReader isReader = new InputStreamReader(System.in);
             BufferedReader stdin = new BufferedReader(isReader);
