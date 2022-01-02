@@ -1,6 +1,15 @@
+/**
+* File: ExcessiveAuth.java
+* Author: Zachary N. Brown
+* Purpose: Demonstrates CWE-307: Improper Restriction 
+* of Excessive Authentication Attempts that allows 
+* a user unlimited login attempts increasing the risk
+* of a brute force-type attack.
+*/
+
 import java.io.BufferedReader;
-import java.io.IOException;
 import java.io.InputStreamReader;
+import java.io.IOException;
 
 public class ExcessiveAuth {
 
@@ -12,7 +21,7 @@ public class ExcessiveAuth {
 
         public static void menu() throws IOException{
             
-            String validation = "aQ5t&y!";
+            String validation = "aQ5t&y!"; // passwords should never be hardcoded (used for simple demonstrative purposes only)
             
             InputStreamReader isReader = new InputStreamReader(System.in);
             BufferedReader stdin = new BufferedReader(isReader);
@@ -37,7 +46,7 @@ public class ExcessiveAuth {
 
                     } else {
 	                    System.out.println("Invalid");
-	                    continue;
+	                    continue; // loop continues with no break allowing excessive attempts
                     } 
                      
 	            } else if (input == 2) {
