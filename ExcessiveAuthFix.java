@@ -1,6 +1,16 @@
+/**
+* File: ExcessiveAuthFix.java
+* Author: Zachary N. Brown
+* Purpose: Demonstrates a mitigation for CWE-307: 
+* Improper Restriction of Excessive Authentication 
+* Attempts by limiting the number of attempts
+* and exiting the application if authentication
+* cannot be reached.
+*/
+
 import java.io.BufferedReader;
-import java.io.IOException;
 import java.io.InputStreamReader;
+import java.io.IOException;
 
 public class ExcessiveAuthFix {
 
@@ -12,7 +22,8 @@ public class ExcessiveAuthFix {
 
         public static void menu() throws IOException{
             
-            String validation = "aQ5t&y!";
+            String validation = "aQ5t&y!"; // passwords should never be hardcoded (used for simple demonstrative purposes)
+					   // store passwords elsewhere with a hash and salt algorithm
             // include starting value for counter
             int login_attempts = 1;
             
@@ -57,7 +68,7 @@ public class ExcessiveAuthFix {
 	            }
 	           
             } else {
-            	// display error when max attempts are
+            	// display error when max attempts are met
                 System.out.println("Contact your administrator.");
                 break;
             }
