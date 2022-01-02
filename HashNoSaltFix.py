@@ -1,3 +1,11 @@
+"""
+    File name: HashNoSaltFix.py
+    Description: This application demonstrates 
+    how to mitigate CWE-759: Use of a One-Way Hash 
+    without a Salt by using a stronger hashing
+    algorithm with a salt for stored user credentials.
+"""
+
 import hashlib
 import sys
 import os
