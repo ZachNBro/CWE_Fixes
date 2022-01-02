@@ -1,4 +1,13 @@
 """
+    File name: SQLInjectionExcample.py
+    Author: Zachary N. Brown
+    Description: This application demonstrates 
+    CWE-89: Improper Neutralization of Special 
+    Elements used in an SQL Command ('SQL Injection')
+    and a mitigation.
+"""
+
+"""
 A program that demonstrates a query function
 that is is vulnerable to an SQL injection attack
 """
