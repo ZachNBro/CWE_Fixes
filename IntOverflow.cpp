@@ -1,19 +1,25 @@
+// This program demonstrates CWE-190: Integer 
+// Overflow or Wraparound by utilizing the
+// short datatype with the ability for
+// a larger value to be input by the user
+// and causing an int overflow condition.
+
 #include <iostream>
 #include <stdio.h>     
 #include <stdlib.h>  
 #include <limits.h>
 
-int main()
-{
-	short large_units;
-	short med_units;
-	short small_units;
+int main() {
 	
-	// scan user input as a short data type
+    short large_units;
+    short med_units;
+    short small_units;
+	
+    // scan user input as a short data type
     printf ("Enter number of large units:");
     scanf ("%hd", &large_units); 
     
-	printf ("Enter number of medium units:");
+    printf ("Enter number of medium units:");
     scanf ("%hd", &med_units); 
     
     printf ("Enter number of small units:");
