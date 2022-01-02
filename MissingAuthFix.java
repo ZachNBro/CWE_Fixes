@@ -1,10 +1,18 @@
+/**
+* File: MissingAuthFix.java
+* Author: Zachary N. Brown
+* Purpose: Demonstrates a mitigation for CWE-306: Missing 
+* Authentication for Critical Function that prompts the user 
+* for a valid code before inputting credentials.
+* 
+*/
+
 import java.io.BufferedReader;
-import java.io.IOException;
 import java.io.InputStreamReader;
+import java.io.IOException;
 
 public class MissingAuthExample {
-	
-	
+		
 	public static void main(String[] args) {
 	
 	int validCodeOne = 123;
@@ -17,8 +25,7 @@ public class MissingAuthExample {
 			
 		System.out.println("Enter Employee Code:");
 		int ecode = Integer.parseInt(stdin.readLine());
-		
-		
+			
 			if (ecode == validCodeOne || ecode == validCodeTwo) {
 			
 			System.out.println("Enter Name:");
@@ -40,5 +47,5 @@ public class MissingAuthExample {
 				e.printStackTrace();
 				}
 			
-		}
 	}
+}
