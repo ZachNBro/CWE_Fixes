@@ -36,8 +36,8 @@ mycursor.executemany(sql, val)
 mydb.commit()
 
 # vulnerable query that allows a user to input/inject any kind of SQL commands
-#query = "SELECT * FROM customers WHERE name ='tom' or '1'='1'"
-#mycursor.execute(query)
+query = "SELECT * FROM customers WHERE name ='tom' or '1'='1'"
+mycursor.execute(query)
 
 # prepared/parameterized query that prevents SQL injection
 query = "SELECT * FROM customers WHERE name = %s"
