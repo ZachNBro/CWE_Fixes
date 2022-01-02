@@ -1,5 +1,5 @@
 """
-    File name: SQLInjectionExcample.py
+    File name: SQLInjectionExample.py
     Author: Zachary N. Brown
     Description: This application demonstrates 
     CWE-89: Improper Neutralization of Special 
