@@ -7,11 +7,6 @@
     and a mitigation.
 """
 
-"""
-A program that demonstrates a query function
-that is is vulnerable to an SQL injection attack
-"""
-
 import mysql.connector
 
 # connects to the mysql db instance
