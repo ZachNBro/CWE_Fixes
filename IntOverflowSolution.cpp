@@ -1,19 +1,25 @@
+// This program demonstrates a mitigation for
+// CWE-190: Integer Overflow or Wraparound by
+// utilizing a long datatype and prevent
+// the int overflow conition if the user inputs
+// a large value.
+
 #include <iostream>
 #include <stdio.h>     
 #include <stdlib.h>  
 #include <limits.h>
 
-int main()
-{
-	long large_units;
-	long med_units;
-	long small_units;
+int main() {
+
+    long large_units;
+    long med_units;
+    long small_units;
 	
-	// scan user input as a long data type
+    // scan user input as a long data type
     printf ("Enter number of large units:");
     scanf ("%li", &large_units); 
     
-	printf ("Enter number of medium units:");
+    printf ("Enter number of medium units:");
     scanf ("%li", &med_units); 
     
     printf ("Enter number of small units:");
