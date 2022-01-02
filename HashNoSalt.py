@@ -1,3 +1,11 @@
+"""
+    File name: HashNoSalt.py
+    Description: This application demonstrates 
+    CWE-759: Use of a One-Way Hash without a Salt
+    by using an oudating hashing algorithm with
+    no salt for a stored username and password.
+"""
+
 import hashlib
 import sys
 
