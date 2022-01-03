@@ -20,8 +20,8 @@ public class ExcessiveAuth {
     	BufferedReader br = new BufferedReader(new FileReader(file));
     	String validation = br.readLine();
  
-            InputStreamReader isReader = new InputStreamReader(System.in);
-            BufferedReader stdin = new BufferedReader(isReader);
+        InputStreamReader isReader = new InputStreamReader(System.in);
+        BufferedReader stdin = new BufferedReader(isReader);
 
 		while (true) {
 			
