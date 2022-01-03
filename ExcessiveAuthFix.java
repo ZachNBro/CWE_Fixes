@@ -1,3 +1,12 @@
+/**
+* File: ExcessiveAuthFix.java
+* Author: Zachary N. Brown
+* Purpose: Demonstrates a mitigation for CWE-307: 
+* Improper Restriction of Excessive Authentication 
+* Attempts which uses a counter to limit the attempts
+* and stop a user from conducting a brute force attack.
+*/
+
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.io.*;
