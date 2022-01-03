@@ -1,5 +1,5 @@
 """
-    File name: HashNoSalt.py
+    File name: hash_no_salt.py
     Description: This application demonstrates 
     CWE-759: Use of a One-Way Hash without a Salt
     by using an oudating hashing algorithm with
