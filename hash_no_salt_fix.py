@@ -1,5 +1,5 @@
 """
-    File name: HashNoSaltFix.py
+    File name: hash_no_salt_fix.py
     Description: This application demonstrates 
     how to mitigate CWE-759: Use of a One-Way Hash 
     without a Salt by using a stronger hashing
