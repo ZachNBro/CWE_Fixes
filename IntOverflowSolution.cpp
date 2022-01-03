@@ -1,8 +1,8 @@
-// This program demonstrates a mitigation for
-// CWE-190: Integer Overflow or Wraparound by
-// utilizing a long datatype and prevent
-// the int overflow conition if the user inputs
-// a large value.
+/* This program demonstrates a mitigation for
+CWE-190: Integer Overflow or Wraparound by
+utilizing a long datatype and prevent
+the int overflow conition if the user inputs
+a large value. */
 
 #include <iostream>
 #include <stdio.h>     
