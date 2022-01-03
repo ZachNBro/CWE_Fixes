@@ -16,7 +16,7 @@ public class ExcessiveAuthFix {
     public static void main(String[] args) throws IOException {
 	
 	// input file with pass to compare
-    	File file = new File("C:\\Users\\Zack\\eclipse-workspace\\ExcessiveAuth\\src\\pass.txt");
+    	File file = new File("path to pass.txt");
     	BufferedReader br = new BufferedReader(new FileReader(file));
     	String validation = br.readLine();
  
