@@ -14,7 +14,7 @@ public class ExcessiveAuth {
     public static void main(String[] args) throws IOException {
 	
 	// input file with pass to compare
-    	File file = new File("path to pass.txt");
+    	File file = new File("[path to stored credentials]");
     	BufferedReader br = new BufferedReader(new FileReader(file));
     	String validation = br.readLine();
  
