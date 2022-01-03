@@ -28,7 +28,6 @@ def sign_up(database):
      'key' : key
     }
     
-    print(database)
     login(database)
     
 def login(database):
