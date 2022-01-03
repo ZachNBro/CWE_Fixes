@@ -13,7 +13,7 @@ public class MissingAuthFix {
 		
 	public static void main(String[] args) throws IOException {
 	
-	File file = new File("path to validcode.txt");
+	File file = new File("[path to stored credentials]");
     	BufferedReader br = new BufferedReader(new FileReader(file));
     	String validation = br.readLine();
 	
