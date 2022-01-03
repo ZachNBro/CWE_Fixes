@@ -1,8 +1,8 @@
-// This program demonstrates CWE-190: Integer 
-// Overflow or Wraparound by utilizing the
-// short datatype with the ability for
-// a larger value to be input by the user
-// and causing an int overflow condition.
+/* This program demonstrates CWE-190: Integer 
+Overflow or Wraparound by utilizing the
+short datatype with the ability for
+a larger value to be input by the user
+and causing an int overflow condition. */
 
 #include <iostream>
 #include <stdio.h>     
