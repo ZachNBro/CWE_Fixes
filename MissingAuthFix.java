@@ -15,18 +15,19 @@ public class MissingAuthExample {
 		
 	public static void main(String[] args) {
 	
-	int validCodeOne = 123;
-	int validCodeTwo = 456;
+	File file = new File("path to validcode.txt");
+    	BufferedReader br = new BufferedReader(new FileReader(file));
+    	String validation = br.readLine();
 	
         InputStreamReader isReader = new InputStreamReader(System.in);
-		BufferedReader stdin = new BufferedReader(isReader);
+	BufferedReader stdin = new BufferedReader(isReader);
 		
 		try {	
 			
 		System.out.println("Enter Employee Code:");
 		int ecode = Integer.parseInt(stdin.readLine());
 			
-			if (ecode == validCodeOne || ecode == validCodeTwo) {
+			if (ecode == validation) {
 			
 			System.out.println("Enter Name:");
 			String name = (stdin.readLine());
@@ -44,8 +45,8 @@ public class MissingAuthExample {
 			else System.out.println("Invalid code");
 			
         	} catch (IOException e) {
-				e.printStackTrace();
-				}
+			e.printStackTrace();
+			}
 			
 	}
 }
