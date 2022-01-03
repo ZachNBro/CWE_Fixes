@@ -23,7 +23,6 @@ def sign_up(database):
     
     # update database with entered credentials
     database.update([(username, hex_dig)])
-    print(database)
     login(database)
     
 def login(database):
