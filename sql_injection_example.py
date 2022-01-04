@@ -43,7 +43,7 @@ mydb.commit()
 query = "SELECT * FROM customers WHERE name ='tom' or '1'='1'"
 mycursor.execute(query)
 
-# prepared/parameterized query that prevents SQL injection
+# prepared/parameterized query that prevents CWE-89
 query = "SELECT * FROM customers WHERE name = %s"
 name = input("Enter name:")
 
