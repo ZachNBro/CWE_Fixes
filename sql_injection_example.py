@@ -27,11 +27,11 @@ mycursor.execute("CREATE TABLE customers (name VARCHAR(50), SSN VARCHAR(20))")
 sql = "INSERT INTO customers (name, SSN) VALUES (%s, %s)"
 val = [
   ('Zach', '424356756'),
-  ('Bryan', '354676520'),
-  ('Aric', '127364584'),
-  ('Mike', '687947563'),
-  ('Brandon', '458375649'),
-  ('Alan', '475869437')
+  ('Steve', '354676520'),
+  ('Devin', '127364584'),
+  ('Tory', '687947563'),
+  ('Shane', '458375649'),
+  ('Andy', '475869437')
 ]
 
 mycursor.executemany(sql, val)
@@ -48,7 +48,7 @@ query = "SELECT * FROM customers WHERE name = %s"
 name = input("Enter name:")
 
 if re.match('$') not in name:
-  mycursor.execute(query, name)
+mycursor.execute(query, name)
 
 else: print("Invalid name")
 
