@@ -4,7 +4,7 @@
 * Purpose: Demonstrates CWE-307: Improper Restriction 
 * of Excessive Authentication Attempts that allows 
 * a user unlimited login attempts increasing the risk
-* of a brute force-type attack.
+* of a brute force attack.
 */
 
 import java.io.*;
