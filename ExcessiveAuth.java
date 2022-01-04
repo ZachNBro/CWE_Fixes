@@ -12,12 +12,7 @@ import java.io.*;
 public class ExcessiveAuth {
 
     public static void main(String[] args) throws IOException {
-	
-	// input file with pass to compare
-    	File file = new File("[path to stored credentials]");
-    	BufferedReader br = new BufferedReader(new FileReader(file));
-    	String validation = br.readLine();
- 
+	    
         InputStreamReader isReader = new InputStreamReader(System.in);
         BufferedReader stdin = new BufferedReader(isReader);
 
@@ -31,11 +26,11 @@ public class ExcessiveAuth {
 	            
 	        if (input == 1) {
 	        System.out.println("Enter your username:");
-	        String username = (stdin.readLine());
+	        String loginusername = (stdin.readLine());
 	        System.out.println("Enter your password:");
-	        String password = (stdin.readLine());
+	        String loginPassword = (stdin.readLine());
                     
-                    if(password.equals(validation)) {
+                    if(args[0].equals(loginPassword)) {
 	                    System.out.println("Welcome back!");
 	                    break;
 
