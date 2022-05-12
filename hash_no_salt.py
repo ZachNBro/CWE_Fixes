@@ -39,8 +39,7 @@ def login(database):
     
     # update temporary login credentials
     temp_login.update([(login_username, hex_dig)])
-    print(temp_login)
-    
+ 
     # compare credentials
     if temp_login == database:
         print("Login Success!")
